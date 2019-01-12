@@ -43,9 +43,8 @@ def part2_path():
         for productEntryB in productList:
             locationB = productEntryB.get('Location')
             productNumberB = productEntryB.get('ProductNumber')
-            if productNumberA != productNumberB:
-                itemMap[(productNumberA, productNumberB)] = \
-                    -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))
+            itemMap[(productNumberA, productNumberB)] = \
+                -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))
     return itemMap
 
 if __name__ == '__main__':

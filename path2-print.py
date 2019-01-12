@@ -32,29 +32,41 @@ def part1():
 
 def part2_path():
     productList = part1()
-    itemMap = []
+    itemMap = {}
     for productEntryA in productList:
         locationA = productEntryA.get('Location')
         productNumberA = productEntryA.get('ProductNumber')
-        itemMap.append({(productNumberA, 0):
-                            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))})
-        itemMap.append({(0, productNumberA):
-                            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))})
+        itemMap[(productNumberA, 0)] = \
+            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))
+        itemMap[(0, productNumberA)] = \
+            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))
         for productEntryB in productList:
             locationB = productEntryB.get('Location')
             productNumberB = productEntryB.get('ProductNumber')
             if productNumberA != productNumberB:
-                itemMap.append({(productNumberA, productNumberB):
-                                    -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))})
+                itemMap[(productNumberA, productNumberB)] = \
+                    -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))
     return itemMap
+
+def sign(x) :
+    if x == 0:
+        return 0
+    else:
+        return x / abs(x)
 
 def part2_print(pathList, pathDictList):
     loc = (0,0)
     pathDict = {}
+    result = ''
     for entry in pathDictList:
         pathDict[entry.get('ProductNumber')] = entry
     for des in pathList:
         desEntry = pathDict[des]
+        desLoc = desEntry.get('Location')
+        if loc == desLoc:
+            result += 'pick' + desEntry.get('ProductNumber')
+        else:
+            dirX = 0 if loc[0] == desLoc[0] else abs(loc[0] - desLoc[0]) /  loc[0] - desLoc[0]
 
 
 if __name__ == '__main__':
