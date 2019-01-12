@@ -1,0 +1,6 @@
+Product Number: 1; Weight: 5.0; Qty: 1; Location: (2, 1)
+Product Number: 2; Weight: 2.0; Qty: 1; Location: (4, 3)
+Product Number: 3; Weight: 2.5; Qty: 2; Location: (2, 5)
+Product Number: 4; Weight: 79.0; Qty: 1; Location: (6, 6)
+Product Number: 8; Weight: 2.5; Qty: 1; Location: (5, 6)
+Product Number: 9; Weight: 0.5; Qty: 1; Location: (7, 1)
