@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3cc832b-6b81-41a5-97c4-a65c5dc55d57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/part2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/part3-bfs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part2.py" beforeDir="false" afterPath="$PROJECT_DIR$/part2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +12,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/utek$Part1.coverage" NAME="Part1 Coverage Results" MODIFIED="1547320245691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/utek$part2.coverage" NAME="part2 Coverage Results" MODIFIED="1547321646466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/utek$Part1.coverage" NAME="Part1 Coverage Results" MODIFIED="1547321923599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/utek$part2.coverage" NAME="part2 Coverage Results" MODIFIED="1547324384160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/utek$path2_print.coverage" NAME="path2-print Coverage Results" MODIFIED="1547320331906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/utek$part2_path.coverage" NAME="part2-path Coverage Results" MODIFIED="1547317033718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -32,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/path2-print.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="91">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -50,8 +49,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/part2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="210">
+              <caret line="136" column="9" lean-forward="true" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+              <folding>
+                <element signature="e#1#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bag.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -59,20 +70,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/programming2019-master/2a.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374" />
+            <state relative-caret-position="-571" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/programming2019-master/2a.in">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Part1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="6" column="13" lean-forward="true" selection-end-line="59" />
+            <state relative-caret-position="90">
+              <caret line="8" lean-forward="true" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -86,6 +101,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;</find>
+      <find>weight</find>
+      <find>totalweight</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -96,6 +118,7 @@
         <option value="$PROJECT_DIR$/path2-print.py" />
         <option value="$PROJECT_DIR$/part3.py" />
         <option value="$PROJECT_DIR$/part3-bfs.py" />
+        <option value="$PROJECT_DIR$/programming2019-master/2a.in" />
         <option value="$PROJECT_DIR$/part2.py" />
       </list>
     </option>
@@ -243,8 +266,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.part2" />
-        <item itemvalue="Python.path2-print" />
         <item itemvalue="Python.Part1" />
+        <item itemvalue="Python.path2-print" />
         <item itemvalue="Python.part2-path" />
       </list>
     </recent_temporary>
@@ -259,12 +282,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547311180245</updated>
-      <workItem from="1547311181625" duration="10478000" />
+      <workItem from="1547311181625" duration="13517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10478000" />
+    <option name="totallyTimeSpent" value="13517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -281,7 +304,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2628135" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28898582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26608506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,18 +341,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/programming2019-master/2a.in">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/programming2019-master/2a.out">
+    <entry file="file://$PROJECT_DIR$/part2-path.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374" />
+        <state relative-caret-position="138">
+          <caret line="31" lean-forward="true" selection-end-line="52" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/path2-print.py">
+    <entry file="file://$PROJECT_DIR$/Part1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="90">
+          <caret line="8" lean-forward="true" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programming2019-master/2a.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -340,24 +376,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Part1.py">
+    <entry file="file://$PROJECT_DIR$/path2-print.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" column="13" lean-forward="true" selection-end-line="59" />
+        <state relative-caret-position="91">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/part2-path.py">
+    <entry file="file://$PROJECT_DIR$/programming2019-master/2a.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="31" lean-forward="true" selection-end-line="52" />
-        </state>
+        <state relative-caret-position="-571" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/part2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="210">
+          <caret line="136" column="9" lean-forward="true" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+          <folding>
+            <element signature="e#1#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
