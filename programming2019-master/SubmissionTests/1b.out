@@ -1,0 +1,5 @@
+[{'Location': (2, 9), 'ProductNumber': 1, 'Qty': 17, 'Weight': 90.0},
+ {'Location': (1, 5), 'ProductNumber': 4, 'Qty': 4, 'Weight': 1.4},
+ {'Location': (1, 2), 'ProductNumber': 5, 'Qty': 2, 'Weight': 7.0},
+ {'Location': (3, 5), 'ProductNumber': 8, 'Qty': 4, 'Weight': 60.0},
+ {'Location': (11, 9), 'ProductNumber': 9, 'Qty': 13, 'Weight': 23.9}]
