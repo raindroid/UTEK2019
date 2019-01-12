@@ -36,12 +36,16 @@ def part2_path():
     for productEntryA in productList:
         locationA = productEntryA.get('Location')
         productNumberA = productEntryA.get('ProductNumber')
+        itemMap.append({(productNumberA, 0):
+                            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))})
+        itemMap.append({(0, productNumberA):
+                            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))})
         for productEntryB in productList:
             locationB = productEntryB.get('Location')
             productNumberB = productEntryB.get('ProductNumber')
             if productNumberA != productNumberB:
                 itemMap.append({(productNumberA, productNumberB):
-                                    max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))})
+                                    -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))})
     return itemMap
 
 if __name__ == '__main__':
