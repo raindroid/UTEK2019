@@ -137,7 +137,37 @@ def sign(x) :
     else:
         return x // abs(x)
 
+def shortest_path(oldPath, pathData):
+    distances = [] #debug
+    for i in range(10):
+        distances.append([0 for _ in range(10)])
+    nodes = {}
+    for i in [0] + oldPath:
+        nodes[i] = {'len':200}
+        for j in [0] + oldPath:
+            distances[i][j] = 0 if i == j else -pathData.get((i, j))
+    # distances[0][0] = 10
 
+    visited = set()
+    current = 0
+    # nodes[current] = {'len':0, 'path': [0]}
+    path = [0]
+    while True:
+        for i, node in nodes.items():
+            if i in visited: continue
+            if distances[current][i] + (0 if current == 0 else nodes[current]['len']) < nodes[i]['len']:
+                nodes[i]['len'] = distances[current][i] + (0 if current == 0 else nodes[current]['len'])
+                nodes[i]['path'] = path + [i]
+
+        for i, node in nodes.items():
+            if i not in visited:
+                current = i
+                break
+        path.append(current)
+        visited.add(current)
+        if len(visited) == len(nodes): break
+
+    return nodes[0]['path']
 
 if __name__ == '__main__':
     # pprint.pprint(part1())
@@ -157,6 +187,7 @@ if __name__ == '__main__':
         result = part2_outputBag(productNumberList, totalWeight, weightList,
                                   part2_bag(productNumberList, weightList, path_data, totalWeight))
         print(part2_print(result, raw_data), end='')
+        # print(shortest_path(result, path_data))
         used.extend(result)
 
         # break
