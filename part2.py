@@ -1,6 +1,7 @@
 
 import pprint
 import math
+import itertools
 
 def part1():
     def SortKey(val):
@@ -168,6 +169,12 @@ def shortest_path(oldPath, pathData):
         if len(visited) == len(nodes): break
 
     return nodes[0]['path']
+
+
+# def shortest(oldPath, pathData):
+#     pathList =
+#     for i in itertools.permutations('abcd', 4):
+#         print(''.join(i))
 
 if __name__ == '__main__':
     # pprint.pprint(part1())
