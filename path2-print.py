@@ -7,7 +7,8 @@ def part1():
 
     # In[30]:
     products = {}
-    inputFile = open("programming2019-master/1a.in")
+    inputFile = open("programming2019-master/2a.in")
+    inputFile.readline()
     inputStr = inputFile.read()
     inputStrList = inputStr.split('\n')
     inputList = []
@@ -29,46 +30,51 @@ def part1():
             i += 1
     return inputListofDict
 
-
-def part2_path():
-    productList = part1()
-    itemMap = {}
-    for productEntryA in productList:
-        locationA = productEntryA.get('Location')
-        productNumberA = productEntryA.get('ProductNumber')
-        itemMap[(productNumberA, 0)] = \
-            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))
-        itemMap[(0, productNumberA)] = \
-            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))
-        for productEntryB in productList:
-            locationB = productEntryB.get('Location')
-            productNumberB = productEntryB.get('ProductNumber')
-            if productNumberA != productNumberB:
-                itemMap[(productNumberA, productNumberB)] = \
-                    -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))
-    return itemMap
-
 def sign(x) :
     if x == 0:
         return 0
     else:
-        return x / abs(x)
+        return x // abs(x)
+
+def part2_move(desEntry, loc, desLoc, pickList, result):
+    while True:
+        if loc[0] == 0 and loc[1] == 0 and len(pickList) > 0:
+            pickList.sort()
+            # print(pickList)
+            for i in pickList:
+                result[0] += 'drop {}\n'.format(i)
+            pickList.clear()
+            break
+        elif loc[0] == desLoc[0] and loc[1] == desLoc[1]:
+            result[0] += 'pick {}\n'.format(desEntry.get('ProductNumber'))
+            pickList.append(desEntry.get('ProductNumber'))
+            if loc[0] != 0 or loc[1] != 0: break
+        else:
+            dirX = sign(desLoc[0] - loc[0])
+            dirY = sign(desLoc[1] - loc[1])
+            loc[0] += dirX
+            loc[1] += dirY
+            result[0] += 'move {} {}\n'.format(loc[0], loc[1])
 
 def part2_print(pathList, pathDictList):
-    loc = (0,0)
+    loc = [0, 0]
     pathDict = {}
-    result = ''
+    pickList = []
+    result = ['']
+    entry = None
     for entry in pathDictList:
         pathDict[entry.get('ProductNumber')] = entry
-    for des in pathList:
-        desEntry = pathDict[des]
-        desLoc = desEntry.get('Location')
-        if loc == desLoc:
-            result += 'pick' + desEntry.get('ProductNumber')
-        else:
-            dirX = 0 if loc[0] == desLoc[0] else abs(loc[0] - desLoc[0]) /  loc[0] - desLoc[0]
 
+    pathList.append(0)
+    for des in pathList:
+        entry = desEntry = {'Location': (0, 0), 'ProductNumber': 0} if des == 0 else pathDict[des]
+        desLoc = desEntry.get('Location')
+        part2_move(desEntry, loc, desLoc, pickList, result)
+
+    # part2_move(entry, loc, [0, 0], pickList, result)
+    return result[0]
 
 if __name__ == '__main__':
-    part2_print([1,2,3,4,8,9], part1())
+    # part1()
+    print(part2_print([1,2,2,2,4,4,0,3], part1()))
 
