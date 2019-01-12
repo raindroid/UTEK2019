@@ -40,10 +40,8 @@ def part2_path():
             locationB = productEntryB.get('Location')
             productNumberB = productEntryB.get('ProductNumber')
             if productNumberA != productNumberB:
-                itemMap.append({'itemA': productEntryA, 'itemB' : productEntryB,
-                                'dis' : max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))})
-            else:
-                break
+                itemMap.append({(productNumberA, productNumberB):
+                                    max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))})
     return itemMap
 
 if __name__ == '__main__':
