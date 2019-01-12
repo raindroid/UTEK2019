@@ -64,7 +64,7 @@ def validate_constraints(paths, items, obstacles=[]):
             if action == 'move':
                 x, y = map(int, operands)
 
-                if abs(positions[idx][0] - x) > 1 or abs(positions[idx][1] - y) > 1:
+                if abs(positions[idx][0] - x) > 1 or abs(positions[idx][1] - y) > 1 or positions[idx][0] < 0 or positions[idx][1] < 0 or positions[idx][0] > 100 or positions[idx][1] > 100:
                     print('Invalid step')
                     return False # robot can't move more than one step
 
