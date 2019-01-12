@@ -32,22 +32,31 @@ def part1():
 
 def part2_path():
     productList = part1()
-    itemMap = {}
+    itemMap = []
     for productEntryA in productList:
         locationA = productEntryA.get('Location')
         productNumberA = productEntryA.get('ProductNumber')
-        itemMap[(productNumberA, 0)] = \
-            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))
-        itemMap[(0, productNumberA)] = \
-            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))
+        itemMap.append({(productNumberA, 0):
+                            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))})
+        itemMap.append({(0, productNumberA):
+                            -max(abs(0 - locationA[0]), abs(0 - locationA[1]))})
         for productEntryB in productList:
             locationB = productEntryB.get('Location')
             productNumberB = productEntryB.get('ProductNumber')
             if productNumberA != productNumberB:
-                itemMap[(productNumberA, productNumberB)] = \
-                    -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))
+                itemMap.append({(productNumberA, productNumberB):
+                                    -max(abs(locationA[0] - locationB[0]), abs(locationA[1] - locationB[1]))})
     return itemMap
 
+def part2_print(pathList, pathDictList):
+    loc = (0,0)
+    pathDict = {}
+    for entry in pathDictList:
+        pathDict[entry.get('ProductNumber')] = entry
+    for des in pathList:
+        desEntry = pathDict[des]
+
+
 if __name__ == '__main__':
-    pprint.pprint(part2_path())
+    part2_print([1,2,3,4,8,9], part1())
 
