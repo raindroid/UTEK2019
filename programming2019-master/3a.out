@@ -1,0 +1,29 @@
+move 1 0
+move 2 0
+move 3 0
+move 4 0
+move 5 0
+move 6 1
+move 6 2
+pick 1
+pick 1
+move 5 3
+move 4 4
+move 3 4
+move 2 4
+pick 5
+pick 5
+pick 5
+move 3 4
+move 4 3
+move 4 2
+move 4 1
+move 3 0
+move 2 0
+move 1 0
+move 0 0
+drop 1
+drop 1
+drop 5
+drop 5
+drop 5

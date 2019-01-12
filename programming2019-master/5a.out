@@ -1,0 +1,17 @@
+move 0 1; move 2 0
+move 0 2; move 3 0
+move 0 3; move 4 0
+move 1 4; move 5 1
+move 2 5; move 6 2
+pick 3; pick 5
+move 1 4; move 5 2
+move 0 3; pick 4
+move 0 2; pick 4
+move 0 1; move 4 1
+move 0 0; move 3 0
+drop 3; move 2 0
+move 0 1; move 1 0
+rest; move 0 0
+rest; drop 5
+rest; drop 4
+rest; drop 4
