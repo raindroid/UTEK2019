@@ -1,0 +1,97 @@
+move 1 1
+move 2 2
+move 3 3
+move 4 4
+move 5 5
+move 5 6
+move 5 7
+move 5 8
+move 5 9
+move 5 10
+pick 10
+pick 10
+move 6 10
+move 7 10
+move 8 10
+move 9 10
+move 10 10
+move 11 10
+move 12 10
+move 13 10
+move 14 10
+move 15 10
+move 16 10
+move 17 10
+move 18 10
+pick 20
+pick 20
+move 17 9
+move 16 8
+move 15 7
+move 14 6
+move 13 6
+move 12 6
+pick 30
+move 11 5
+move 10 4
+move 9 3
+move 8 2
+move 7 1
+move 6 0
+move 5 0
+move 4 0
+move 3 0
+move 2 0
+move 1 0
+move 0 0
+drop 10
+drop 10
+drop 20
+drop 20
+drop 30
+move 1 1
+move 2 2
+move 3 3
+move 4 4
+move 5 5
+move 6 6
+move 7 7
+move 8 8
+pick 40
+pick 40
+move 7 7
+move 6 6
+move 5 5
+move 4 4
+move 3 3
+move 2 2
+move 1 1
+move 0 0
+drop 40
+drop 40
+move 1 1
+move 2 2
+move 3 3
+move 4 4
+move 5 5
+move 6 6
+move 7 6
+move 8 6
+move 9 6
+move 10 6
+move 11 6
+move 12 6
+pick 30
+move 11 5
+move 10 4
+move 9 3
+move 8 2
+move 7 1
+move 6 0
+move 5 0
+move 4 0
+move 3 0
+move 2 0
+move 1 0
+move 0 0
+drop 30

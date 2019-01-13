@@ -5,9 +5,15 @@
 <strong>Imported Libraries</strong>
 <ul>
 <li>pprint</li>
-
+<li>math</li>
 </ul>
 
 <strong>Algorithm Explanation</strong>
+<strong>the algorithm generates pick up sequences</strong>
+<strong>using dynamic programming</strong>
+<strong>and then generate the shortest path with</strong>
+<strong>with consideration of</strong>
+<strong>possible obstacles within the map</strong>
+
 
 

@@ -1,7 +1,7 @@
 
-import pprint
+
 import math
-import itertools
+
 
 def part1():
     def SortKey(val):
@@ -9,7 +9,7 @@ def part1():
 
     # In[30]:
     products = {}
-    inputFile = open("programming2019-master/2a.in")
+    inputFile = open("programming2019-master/SubmissionTests/2c.in")
     length = int(inputFile.readline().split(' ')[1][:-1])
     inputStr = inputFile.read()
     inputStrList = inputStr.split('\n')

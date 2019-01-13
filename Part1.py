@@ -12,7 +12,7 @@ import pprint
 
 products = {}
 
-inputFile = open("programming2019-master/1a.in")
+inputFile = open("programming2019-master/SubmissionTests/1c.in")
 
 inputStr = inputFile.read()
 
@@ -20,10 +20,11 @@ inputStrList = inputStr.split('\n')
 
 inputList = []
 for i in inputStrList:
-    inputList.append(i.lstrip('(').rstrip(')').split(','))
+    inputList.append(i.lstrip('(').rstrip(' ').rstrip(')').split(','))
     
 inputListofDict = []
 for i in inputList:
+    # print(i)
     inputListofDict.append({'Location': (int(i[0]),int(i[1])), 'ProductNumber': int(i[2]), "Weight": float(i[3]), "Qty": 1})
 
 #pprint.pprint(inputListofDict)
